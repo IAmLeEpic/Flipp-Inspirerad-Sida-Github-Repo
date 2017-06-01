@@ -1,0 +1,438 @@
+ #wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#wrapper.active {
+  padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 0;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin-right: 50px;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  padding-left: 60px;
+}
+
+.sidebar-nav li a span:before {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  width: 20px;
+  line-height: 18px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active {
+  background-color: #464a4c;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.inset {
+  padding: 20px;
+}
+
+@media (max-width:767px) {
+
+#wrapper {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  left: 0;
+}
+
+#wrapper.active {
+  position: relative;
+  left: 250px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+}
+
+.inset {
+  padding: 15px;
+}
+
+}
+
+/* Homepage Container */
+#homePage {
+  padding: 0;
+  margin: 0;
+  height: 800px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("bgHome.jpg");
+}
+
+/* Aboutpage Container */
+#aboutPage {
+  height: 800px;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("bg1.jpg");
+}
+
+#storePage {
+  height: 800px;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("bg2.jpg");
+}
+
+#contactPage {
+  height: 800px;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("bg3Alt.jpg");
+}
+
+#linksPage {
+  height: 800px;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("bg4Alt.jpg");
+}
+
+#textContent {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+  position: relative;
+  color: white;
+  z-index: 10;
+
+  color: #fff;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+/* Home Page */
+#homePageTitle {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-family: 'Indie Flower', cursive;
+}
+
+#homePageContent {
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px ;
+  padding-right: 30px ;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  position: relative;
+  background-color: white;
+  color: black;
+  z-index: 10;
+}
+
+/* About Page */
+#aboutTitle {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.aboutContent {
+  width: 45%;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  margin: auto;
+  margin-top: 0;
+}
+
+#aboutColumns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  background-color: white;
+  z-index: 10;
+  position: relative;
+}
+
+/* Store Page */
+#storeTitle {
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.storeContent {
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px ;
+  padding-right: 30px ;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  position: relative;
+  background-color: white;
+  color: black;
+  z-index: 10;
+}
+
+#storeColumns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  background-color: white;
+  z-index: 10;
+  position: relative;
+}
+
+/* Contact Page */
+#contactTitle {
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.contactContent {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px ;
+  padding-right: 30px ;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  position: relative;
+  background-color: white;
+  color: black;
+  z-index: 10;
+}
+
+#fb {
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+#insta {
+  margin-left: 10%;
+  margin-right: 2%;
+}
+
+#snap {
+  margin-left: 13%;
+  margin-right: 2%;
+}
+
+#contactMail {
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: 'Indie Flower', cursive;
+}
+
+/*Links Page */
+#linksTitle {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  width: 1200px;
+  height: 250px;
+}
+
+#flex-item {
+  background-color: white;
+  width: 250px;
+  height: 500px;
+  margin-left: 50px;
+  border-radius: 5px;
+}
+
+#disc {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+  border-bottom: 6px black;
+}
+
+#cdon {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+#ebay {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+#amazon {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+#flex-item-text {
+  margin-top: 10%;
+  margin-left: 5%;
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+}
+
+#anch4 {
+  text-align: center;
+  color: white;
+
+  color: #fff;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.well {
+  margin-bottom: 0;
+  border: none;
+}
+
+/* Sidebar Adjustments */
+#sideBarText {
+  color: white;
+  font-size: 25px;
+  font-family: 'Courgette', cursive;
+}
+
+#sideBarTitle {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+  background-color: #464a4c;
+}
+
+.sideBarContent {
+  margin-top: 50px;
+}
+
+.homeBtn {
+  padding-top: 10px;
+  height: 60px;
+  background-color: #464a4c;
+}
